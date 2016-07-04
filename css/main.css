@@ -1,0 +1,17 @@
+.container {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+.inputTarea, a {
+	max-width: 80%;
+	margin: 0 auto;
+}
+li {
+	list-style: none;
+}
+i.icono-borrar {
+	float: right;
+}
+input.checkbox {
+	float: left;
+}
