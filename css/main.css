@@ -6,6 +6,9 @@
 	max-width: 80%;
 	margin: 0 auto;
 }
+ul {
+	overflow: scroll;
+}
 li {
 	list-style: none;
 }
