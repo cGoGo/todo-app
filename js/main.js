@@ -1,15 +1,17 @@
+	//Pasos a seguir:
+//Declaramos las varibles
+var contenedorTareas = document.getElementById("contenedorTareas"),
+	inputTarea = document.getElementById("inputTarea"),
+	botonAgregar = document.getElementById("botonAgregar");
 
-//Pasos a seguir:
-//1.- Creamos el elemento (createElement)
-var contTarea = document.createElement("li");
+//Funcion para agregar tarea
+var agregarTarea = function () {
+	var tareaIngresada = inputTarea.value, 						//valor de input
+		nuevaTarea = document.createElement("li"),			//creamos li para añadir
+		textoTarea = document.createTextNode(tareaIngresada); //creamos un noto de texto con la info del input
+	nuevaTarea.appendChild(textoTarea);								//agregamos el texto al li
+	contenedorTareas.appendChild(nuevaTarea);					//agregamos el li a la lista
+};
 
-//2.- Creamos el contenido, nodo de texto (createTextNode)
-var texto = document.getElementById("tareaIngresada");
-var textoTarea = document.createTextNode(texto.value);
-
-//3.- Añadimos el nodo de texto al elemnto que creamos (appendChild)
-contTarea.appendChild(textoTarea);
-
-//4.- Agregamos el elemento al DOM (llamamos al padre por el Id y agre-
-//		gamos el elemento)
-document.getElementById("contenedor-tareas").appendChild(contTarea);
+//al hacer "click" al boton, llamamos a la funcion
+botonAgregar.addEventListener("click", agregarTarea);
