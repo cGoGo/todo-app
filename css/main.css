@@ -6,9 +6,6 @@
 	max-width: 80%;
 	margin: 0 auto;
 }
-ul {
-	overflow: scroll;
-}
 li {
 	list-style: none;
 }
@@ -17,4 +14,7 @@ i.icono-borrar {
 }
 input.checkbox {
 	float: left;
+}
+.tachado {
+	text-decoration: line-through;
 }
