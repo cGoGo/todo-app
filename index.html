@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Lista de tareas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<title>Lista de tareas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="container">
-    <h3>Lista de tareas</h3>
-    <p>Bienvenido a tu lista de tareas. Ingresa tus <i>tareas pendientes</i> para hacer tu lista.</p>
-	  <div class="form-group">
-	    <input type="text" class="inputTarea" placeholder="Ingresa tu tarea" id="inputTarea">
-	  </div>
-	  <a class="btn btn-success btn-block" id="botonAgregar">
-	  	<i class="fa fa-pencil" aria-hidden="true"></i>
-	  	Agregar tarea
-	  </a>
-		<ul id="contenedorTareas">
-			<li>TEXTO DE PRUEBA</li>
-			<li>TEXTO DE PRUEBA 2</li>
-		</ul>
+	<div class="container">
+		<div class="contenedor-fijo">
+			<h3>Lista de tareas</h3>
+			<p>Bienvenido a tu lista de tareas. Ingresa tus <i>tareas pendientes</i> para hacer tu lista.</p>
+			<input type="text" class="inputTarea" placeholder="Ingresa tu tarea" id="inputTarea">
+			<a class="botonAgregar" id="botonAgregar">
+				<i class="fa fa-pencil" aria-hidden="true"></i>
+				Agregar tarea
+			</a>
+		</div>
+		<div class="contenedorDeTareas">
+			<ul id="contenedorTareas">
+				
+			</ul>
+		</div>
 	</div>
 
 	<script src="js/main.js"></script>
 </body>
 </html>
+
 
 

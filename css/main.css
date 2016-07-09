@@ -1,13 +1,78 @@
-.container {
-	text-align: center;
-	font-family: 'Raleway', sans-serif;
+body {
+	margin: 0;
+	padding: 0;
+	background: whitesmoke;
 }
-.inputTarea, a {
+.container {
+	font-family: 'Raleway', sans-serif;
+	width: 100%;
+}
+.contenedor-fijo {
+	background: #F0E1ED;
+	position: fixed;
+	width: 100%;
+	height: 250px;
+	text-align: center;
+}
+.contenedor-fijo h3 {
+	font-size: 2em;
+	margin: 50px 0% 0%;
+	color: #B5C342;
+}
+.contenedor-fijo p {
+	font-size : 1.2em;
+	margin: 0;
+	padding: 20px;
+	color: #8349A1;
+}
+.contenedorDeTareas {
+	padding-top: 250px;
+	display: block;
+}
+.contenedorDeTareas ul {
+	padding: 0;
+	margin: 0;
+}
+li.contenedor-tareas {
+	margin: 0;
+	padding: 4% 10%;
+	list-style: none;
+	background: #FFE097;
+	border-bottom: 1px solid #B5C342;
+	color: #484848;
+}
+li span {
+	width: 80%;
+	display: inline-block;
+}
+li input {
+	margin-right: 4%;
+}
+li input, li i {
+	display: inline-block;
+}
+.inputTarea {
+	display: block;
+	width: 40%;
+	border: 2px solid #FDCA52;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+a.botonAgregar {
+	padding: 5px 15px;
+	display: inline-block;
+	margin: 10px;
+	background: #D95EDB;
+	border-radius: 5px;
+	color: #F0E1ED;
+}
+a.botonAgregar:active {
+	background: #EF2478;
+	color: #F0E1ED;
+}
+.inputTarea, .boton {
 	max-width: 80%;
 	margin: 0 auto;
-}
-li {
-	list-style: none;
 }
 i.icono-borrar {
 	float: right;
@@ -17,4 +82,13 @@ input.checkbox {
 }
 .tachado {
 	text-decoration: line-through;
+}
+@media (max-width: 420px) {
+	.contenedorDeTareas {
+		padding-top: 280px;
+		display: block;
+	}
+	.contenedor-fijo {
+		height: 280px;
+	}
 }
