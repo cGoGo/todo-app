@@ -92,3 +92,12 @@ input.checkbox {
 		height: 280px;
 	}
 }
+@media (min-width: 421px) and (max-width: 750px) {
+	.contenedorDeTareas {
+		padding-top: 290px;
+		display: block;
+	}
+	.contenedor-fijo {
+		height: 290px;
+	}
+}
